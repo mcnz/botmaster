@@ -1,0 +1,21 @@
+author: n3cr0
+description: "The best Multiverse IRC Bot you've ever seen"
+main: nz.co.deimos.botmaster.BotMaster
+name: BotMaster
+startup: postworld
+version: '0.6.8'
+website: deimos.co.nz
+commands:
+    ac:
+        description: Send/receive admin messages
+        usage: /ac <message>
+    helpme:
+        description: Send a message to the staff team
+        usage: /helpme <message>
+    me:
+        description: Used to send role playing messages to IRC
+        usage: /me <action>
+permissions:
+    botmaster.admin:
+        description: Allows access to /ac
+        default: op

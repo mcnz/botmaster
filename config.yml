@@ -1,0 +1,51 @@
+# BotMaster configuration
+
+# what server should we talk to
+irc:
+    auth: MineBot
+    host: irc.minecraft.co.nz
+    port: 6667
+    user: bot_deimos
+    chan: deimos
+    adminchan: admin
+    onmotd:
+        - "PRIVMSG MineBot :.login redacted"
+    onping:
+
+# main bot conf
+botmaster:
+    nick: DeimosAdmin
+    eventchan: events
+    onmotd:
+        - "PRIVMSG MineBot :.api getSessions"
+        - "PRIVMSG MineBot :.api registerCommands online vanished"
+    onping:
+        - "PRIVMSG MineBot :.api getSessions"
+
+# how our bots are arranged
+# maps worldname -> botname
+# all bots live in irc.chan
+bots:
+    world: default
+
+# maps colour codes from Minecraft to IRC
+colourmap:
+    "4": "4"
+    "c": "4"
+    "6": "7"
+    "e": "8"
+    "2": "10"
+    "a": "9"
+    "b": "11"
+    "3": "11"
+    "1": "2"
+    "9": "12"
+    "d": "13"
+    "5": "6"
+    "f": "0"
+    "7": "14"
+    "8": "15"
+    "0": "1"
+
+# set the following to true when you're done
+config-set: false
